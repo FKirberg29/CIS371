@@ -1,0 +1,131 @@
+html,body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex-grow: 1;
+}
+
+#mygrid {
+    display: grid;
+    grid-template-rows: 100px 1fr 1fr 100px;
+    grid-template-columns: 30% 15% 1fr 1fr 15%;
+    border-bottom: 5px solid;
+    border-right: 5px solid;
+}
+
+#flex {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.floatright {
+    float: right;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.icon {
+    max-height: 50px;
+    max-width: 50px;
+}
+
+.border {
+    border-top: 5px solid;
+    border-left: 5px solid;
+}
+
+.area1 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background-color: #006400;
+    border-top: 5px solid;
+    border-left: 5px solid;
+}
+
+.area2 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 6;
+    background-color: rgb(255, 215, 0);
+    border-top: 5px solid;
+    border-left: 5px solid;
+}
+
+.area3 {
+    grid-row-start: 2;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background-color:  #de6349;
+    border-top: 5px solid;
+    border-left: 5px solid;
+}
+
+.area4 {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    background-color: hsl(300, 24%, 80%);
+    border-top: 5px solid;
+    border-left: 5px solid;
+}
+
+.area5 {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 5;
+    grid-column-end: 6;
+    background-color: rgb(106, 90, 205);
+    border-top: 5px solid;
+    border-left: 5px solid;
+}
+
+.area6 {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    background-color: #98fb98;
+    border-top: 5px solid;
+    border-left: 5px solid;
+}
+
+.area7 {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 3;
+    grid-column-end: 6;
+    background-color: hsl(300, 100%, 50%);
+    border-top: 5px solid;
+    border-left: 5px solid;
+}
+
+.area8 {
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 2;
+    grid-column-end: 6;
+    background-color: rgb(0, 255, 255);
+    border-top: 5px solid;
+    border-left: 5px solid;
+}

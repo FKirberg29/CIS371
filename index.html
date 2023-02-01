@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    tr:nth-child(odd) {
+      background-color: red;
+    }
+    tr:nth-child(even) {
+      background-color: blue;
+    }
+    tr:hover {
+      background-color: purple;
+    }
+  </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="mystyles.css">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Fabian Kirberg</h1>
+  <p><img src="headshot.jpg" height="100px" width="100px" class="floatright">To start, put a heading with your name at the top of page. Then place a picture of yourself (it can be silly but again it would be nice to have something I can recognize) so that it appears on the right side of the page (use CSS float). Then have one or more paragraphs to the left of your picture that wrap around it. To show the text wrapping effect be sure to include sufficiently long text in your paragraph(s) and specify the image size so it's not too big/tall.</p>
+  <div id="mygrid" class="content">
+    <span class="area1 center"><img src="headshot.jpg" alt="Headshot of Fabian Kirberg" height="95.3"></span>
+    <span class="area2"><center><h2>Fabian Kirberg</h2><h3>555-555-5555</h3></center></span> 
+    <span class="area3">
+      <p>
+        The first portion of this website is my name in a header and a small paragraph wrapped around an image of myself.
+        Afterwards, for the majority of this website I used a CSS grid box to lay out a specific template using a set of given parameter for the grid's box sizes.
+        I then used multiple span elements that each had a specific class applied to them to determine where the span's contents would go on the grid.
+        For example, Area 1 has a picture of myself. While Area 2 is much wider and contains my name and a fake phone number.
+        I also listed some of my previous courses at GVSU in a table. I created three hyperlinks using the abbreviation of three different
+        companies (Kentucky Fried Chicken, Home Box Office, and British Broadcasting Corporation). I used a paragraph to show usage of bold, italics, and code
+        text modifiers. I also added five icons that can be clicked as a link to their respective websites.
+      </p>
+    </span> 
+    <span class="area4 center">
+      <table border="1">
+        <tbody>
+          <tr>
+            <td>Course Number</td>
+            <td>Course Name</td>
+            <td>Semester Taken</td>
+          </tr>
+          <tr>
+            <td>CIS 163</td>
+            <td>Computer Science II</td>
+            <td>Fall 2021</td>
+          </tr>
+          <tr>
+            <td>CIS 353</td>
+            <td>Database</td>
+            <td>Winter 2022</td>
+          </tr>
+          <tr>
+            <td>CIS 351</td>
+            <td>Computer Org &amp; Assembly</td>
+            <td>Fall 2022</td>
+          </tr>
+          <tr>
+            <td>CIS 371</td>
+            <td>Web Application Programming</td>
+            <td>Winter 2023</td>
+          </tr>
+        </tbody>
+      </table>
+    </span>
+    <span class="area5 center"><img src="logicgatesymbols.jpg" alt="Logic Gates" class="image"></span>
+    <span class="area6">
+      <ul>
+        <li><a href="https://www.kfc.com/">KFC</a></li>
+        <li><a href="https://www.hbo.com/">HBO</a></li>
+        <li><a href="https://www.bbc.com/">BBC</a></li>
+      </ul></span> 
+    <span class="area7"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<b>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</b> <i>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</i> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Code for a*b: <code>a = 3; b = 4; c = a * b;</code></p></span> 
+    <span id="flex" class="area8">
+      <a href="https://www.facebook.com/"><img src="facebookicon.png" class="icon"></a>
+      <a href="https://twitter.com/?lang=en"><img src="twittericon.png" class="icon"></a>
+      <a href="https://www.instagram.com/"><img src="instagramicon.png" class="icon"></a>
+      <a href="https://github.com/"><img src="githubicon.png" class="icon"></a>
+      <a href="https://www.pinterest.com/"><img src="pintresticon.png" class="icon"></a>
+    </span>
+  </div>
+</body>
+</html>
