@@ -19,7 +19,7 @@ body {
     border-right: 5px solid;
 }
 
-#flex {
+.flex {
     display: flex;
     justify-content: space-evenly;
     align-items: center;

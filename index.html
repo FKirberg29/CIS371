@@ -2,6 +2,9 @@
 <html lang="en">
 <head>
   <style>
+    th {
+      background-color: blue;
+    }
     tr:nth-child(odd) {
       background-color: red;
     }
@@ -15,6 +18,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
   <link rel="stylesheet" href="mystyles.css">
   <title>Document</title>
 </head>
@@ -35,52 +39,12 @@
         text modifiers. I also added five icons that can be clicked as a link to their respective websites.
       </p>
     </span> 
-    <span class="area4 center">
-      <table border="1">
-        <tbody>
-          <tr>
-            <td>Course Number</td>
-            <td>Course Name</td>
-            <td>Semester Taken</td>
-          </tr>
-          <tr>
-            <td>CIS 163</td>
-            <td>Computer Science II</td>
-            <td>Fall 2021</td>
-          </tr>
-          <tr>
-            <td>CIS 353</td>
-            <td>Database</td>
-            <td>Winter 2022</td>
-          </tr>
-          <tr>
-            <td>CIS 351</td>
-            <td>Computer Org &amp; Assembly</td>
-            <td>Fall 2022</td>
-          </tr>
-          <tr>
-            <td>CIS 371</td>
-            <td>Web Application Programming</td>
-            <td>Winter 2023</td>
-          </tr>
-        </tbody>
-      </table>
-    </span>
+    <div id="area4-table" class="area4 center"></div>
     <span class="area5 center"><img src="logicgatesymbols.jpg" alt="Logic Gates" class="image"></span>
-    <span class="area6">
-      <ul>
-        <li><a href="https://www.kfc.com/">KFC</a></li>
-        <li><a href="https://www.hbo.com/">HBO</a></li>
-        <li><a href="https://www.bbc.com/">BBC</a></li>
-      </ul></span> 
+    <div id="area6-list" class="area6"></div> 
     <span class="area7"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<b>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</b> <i>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</i> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Code for a*b: <code>a = 3; b = 4; c = a * b;</code></p></span> 
-    <span id="flex" class="area8">
-      <a href="https://www.facebook.com/"><img src="facebookicon.png" class="icon"></a>
-      <a href="https://twitter.com/?lang=en"><img src="twittericon.png" class="icon"></a>
-      <a href="https://www.instagram.com/"><img src="instagramicon.png" class="icon"></a>
-      <a href="https://github.com/"><img src="githubicon.png" class="icon"></a>
-      <a href="https://www.pinterest.com/"><img src="pintresticon.png" class="icon"></a>
-    </span>
+    <div id="area8-icons" class="area8 flex"></div>
   </div>
-</body>
+  <script type="text/babel" src="mycode.ts" />
+ </body>
 </html>
